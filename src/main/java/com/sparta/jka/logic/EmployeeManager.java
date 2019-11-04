@@ -16,6 +16,7 @@ public class EmployeeManager {
         Map<String,Employee> employees = readerFile.readFile();
         DAO dao = new DAO();
         dao.runToDB(employees);
+        // readerFile.addToDB();
 
     }
 }

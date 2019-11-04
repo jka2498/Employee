@@ -16,7 +16,7 @@ public class Employee {
     private LocalDate dateOfJoining;
     private double salary;
 
-    public Employee(String empID, String prefixName, String firstName, String lastName, String middleInit, String gender,
+    public Employee(String empID, String prefixName, String firstName, String middleInit, String lastName, String gender,
                     String email, LocalDate dob, LocalDate dateOfJoining, double salary) {
         this.empID = empID;
         this.prefixName = prefixName;
