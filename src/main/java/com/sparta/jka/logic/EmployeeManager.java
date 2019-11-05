@@ -5,18 +5,20 @@ import com.sparta.jka.readers.ReaderFile;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class EmployeeManager {
 
-    public void addEmployeeDetails(){
+    public void addEmployeeDetails() {
 
         ReaderFile readerFile = new ReaderFile();
-        Map<String,Employee> employees = readerFile.readFile();
+        Map<String, Employee> employees = readerFile.readFile();
         DAO dao = new DAO();
-        dao.runToDB(employees);
-        // readerFile.addToDB();
+        dao.insertIntoDB(employees);
+        System.out.println(employees.size());
 
     }
 }
